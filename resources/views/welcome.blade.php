@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Web Geografis Vaksin COV-19</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 50px;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+
+<div id="map" style="width: 600px; height: 400px;"></div>
+
+<script src="https://cdn.jsdelivr.net/leaflet/1.3.1/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+<script src="/dataset.js"></script>
+
+<script>
+
+	const map = L.map('map').setView([-7.6440623,112.7734131], 8);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+    function getColor(d) {
+        return d > 1000 ? '#800026' :
+            d > 500  ? '#BD0026' :
+            d > 200  ? '#E31A1C' :
+            d > 100  ? '#FC4E2A' :
+            d > 50   ? '#FD8D3C' :
+            d > 20   ? '#FEB24C' :
+            d > 10   ? '#FED976' :
+                        '#FFEDA0';
+    }
+
+    function style(feature) {
+        return {
+            fillColor: getColor(feature.properties.density),
+            weight: 2,
+            opacity: 2,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+L.geoJson(geoJsonData, {style: style}).addTo(map);
+</script>
+
+</body>
+
