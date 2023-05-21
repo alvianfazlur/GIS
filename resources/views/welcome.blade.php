@@ -132,7 +132,7 @@ $.getJSON('assets/geojson/dataloker.geojson', function (data) {
                 var properties = feature.properties;
 
                 // Membuat popup dengan informasi titik
-                var popupContent = properties.name + "      " + "⭐" + properties.stars + "<br>" +
+                var popupContent = properties.name + "      " + "⭐" + properties.stars +
                     "<br><strong>Alamat :</strong> "  + "<br>" + properties.location;
                 layer.bindPopup(popupContent);
             }
