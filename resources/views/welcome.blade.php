@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Web Geografis Vaksin COV-19</title>
+	<title>Pengangguransky</title>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
@@ -80,7 +80,9 @@
       </div>
 <script src="https://cdn.jsdelivr.net/leaflet/1.3.1/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/dataset.js"></script>
+<script src="/dataloker.js"></script>
 
 <script>
 	
@@ -91,6 +93,10 @@
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
+  var officeIcon = L.icon({
+        iconUrl: 'assets/kantor.png',
+        iconSize:    [35, 35], // size of the icon
+    });
     function getColor(d) {
         return d > 1000 ? '#800026' :
             d > 500  ? '#BD0026' :
@@ -114,6 +120,24 @@
     }
 
 L.geoJson(geoJsonData, {style: style}).addTo(map);
+$.getJSON('assets/geojson/dataloker.geojson', function (data) {
+        L.geoJSON(data, {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: officeIcon
+                });
+            },
+
+            onEachFeature: function (feature, layer) {
+                var properties = feature.properties;
+
+                // Membuat popup dengan informasi titik
+                var popupContent = properties.name + "      " + "⭐" + properties.stars + "<br>" +
+                    "<br><strong>Alamat :</strong> "  + "<br>" + properties.location;
+                layer.bindPopup(popupContent);
+            }
+        }).addTo(map);
+    });
 </script>
 
 
@@ -131,5 +155,7 @@ L.geoJson(geoJsonData, {style: style}).addTo(map);
 <script src="/assets/js/script.js"></script>
 <script src="/assets/js/db.data.js"></script>
 <script src="/assets/js/db.sales.js"></script>
+
+
 </body>
 
