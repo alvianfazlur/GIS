@@ -49,7 +49,7 @@
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                         <div class="header__btn">
-                            <a href="#" class="lab-btn">Get Started</a>
+                            <a href="/lp" class="lab-btn">Get Started</a>
                         </div>
                     </div>
                     <div class="header__bararea">
@@ -77,7 +77,7 @@
                             <p>Website ini didedikasikan untuk menyajikan informasi tentang data pengangguran di Jawa
                                 Timur secara visual.</p>
                             <div class="banner__groupbtn">
-                                <a href="appointment.html" class="lab-btn">Get Started</a>
+                                <a href="/lp" class="lab-btn">Get Started</a>
                                 <a target="_blank"
                                     href="https://api.whatsapp.com/send/?phone=6281357030197&text&type=phone_number&app_absent=0"
                                     class="lab-btn bg-title"><i class="icofont-phone"></i>
@@ -184,7 +184,7 @@
                             setiap kota, sehingga membantu para pencari kerja dan pemangku kepentingan lainnya dalam
                             membuat keputusan yang lebih baik.
                         </p>
-                        <a href="#" class="lab-btn">Get Started</a>
+                        <a href="/lp" class="lab-btn">Get Started</a>
                     </div>
                 </div>
             </div>

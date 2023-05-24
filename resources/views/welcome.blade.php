@@ -23,6 +23,17 @@
 			max-width: 100%;
 			max-height: 100%;
 		}
+    #legend {
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .circle {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 5px;
+    }
 	</style>
 
         <!-- Vendor CSS -->
@@ -37,7 +48,7 @@
 
     <div class="sidebar">
         <div class="sidebar-header">
-          <a href="../" class="sidebar-logo">Kelompok 9 Hore</a>
+          <a href="/" class="sidebar-logo">Idle Tracker</a>
         </div>
         <!-- sidebar-header -->
         <div id="sidebarMenu" class="sidebar-body">
@@ -45,13 +56,13 @@
             <a href="#" class="nav-label">Dashboard</a>
             <ul class="nav nav-sidebar">
               <li class="nav-item">
-                <a href="../dashboard/finance.html" class="nav-link"><i class="ri-map-pin-line"></i> <span>Map</span></a>
+                <a href="/lp" class="nav-link"><i class="ri-map-pin-line"></i> <span>Map</span></a>
               </li>
               <li class="nav-item">
                 <a href="../dashboard/events.html" class="nav-link"><i class="ri-database-line"></i> <span>Database</span></a>
               </li>
               <li class="nav-item">
-                <a href="../dashboard/sales.html" class="nav-link active"><i class="ri-contacts-line"></i> <span>Contact Us</span></a>
+                <a href="../dashboard/sales.html" class="nav-link"><i class="ri-contacts-line"></i> <span>Contact Us</span></a>
               </li>
             </ul>
           </div>
@@ -77,6 +88,7 @@
 
       <div class="main main-app p-3 p-lg-4">
         <div id="map" style="width: 75%; height: 400px;"></div>
+        <div id="legend" class="leaflet-control"></div>
       </div>
 <script src="https://cdn.jsdelivr.net/leaflet/1.3.1/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
@@ -92,6 +104,26 @@
 		maxZoom: 18,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
+
+  var legend = L.control({
+    position: 'bottomright'
+  });
+
+legend.onAdd = function(map) {
+    var div = L.DomUtil.get('legend');
+    div.innerHTML = '<h4>Chloropleth</h4>' +
+        '<div><span class="circle" style="background-color: #800026;"></span> Parah</div>' +
+        '<div><span class="circle" style="background-color: #BD0026;"></span> Parah</div>' +
+        '<div><span class="circle" style="background-color: #E31A1C;"></span> Parah</div>' +
+        '<div><span class="circle" style="background-color: #FC4E2A;"></span> Sedang</div>' +
+        '<div><span class="circle" style="background-color: #FD8D3C;"></span> Sedang</div>' +
+        '<div><span class="circle" style="background-color: #FEB24C;"></span> Rendah</div>' +
+        '<div><span class="circle" style="background-color: #FED976;"></span> Rendah</div>' +
+        '<div><span class="circle" style="background-color: #FFEDA0;"></span> Aman</div>';
+    return div;
+};
+
+legend.addTo(map);
 
   var officeIcon = L.icon({
         iconUrl: 'assets/kantor.png',
@@ -119,7 +151,14 @@
         };
     }
 
-L.geoJson(geoJsonData, {style: style}).addTo(map);
+// L.geoJson(geoJsonData, {style: style}).addTo(map);
+L.geoJson(geoJsonData, {
+  style: style,
+  onEachFeature: function(feature, layer) {
+    layer.bindPopup("<strong> Nama Daerah : </strong>" + feature.properties.wadmkk);
+  }
+}).addTo(map);
+
 $.getJSON('assets/geojson/dataloker.geojson', function (data) {
         L.geoJSON(data, {
             pointToLayer: function (feature, latlng) {
@@ -132,8 +171,13 @@ $.getJSON('assets/geojson/dataloker.geojson', function (data) {
                 var properties = feature.properties;
 
                 // Membuat popup dengan informasi titik
-                var popupContent = properties.name + "      " + "⭐" + properties.stars +
-                    "<br><strong>Alamat :</strong> "  + "<br>" + properties.location;
+                var popupContent = '<div style="text-align: center; font-family: Poppins, sans-serif; font-size: 14px;">';
+                popupContent += '<div style="text-align: center;">';
+                popupContent += '<h3>' + properties.name + '</h3>';
+                popupContent += '<img src="' + properties.image + '" style="width: 150px;height: 150px">';
+                popupContent += '<br><br><strong>Lowongan Yang Tersedia : </strong><br>' + properties.lowongan;
+                popupContent += '<br><strong>Alamat :</strong><br>' + properties.location;
+                popupContent += '</div>';
                 layer.bindPopup(popupContent);
             }
         }).addTo(map);

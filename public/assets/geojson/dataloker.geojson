@@ -6,7 +6,8 @@
             "properties": {
                 "name": "PT. Maulidan Teknologi Kreatif",
                 "location": "Jl. Klampis Anom VIII No.F-150, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117",
-                "stars": "5"
+                "image": "/assets/img/pt_maulidan.jpg",
+                "lowongan": "internship"
             },
             "geometry": {
                 "coordinates": [112.77455, -7.29421],
@@ -19,7 +20,8 @@
             "properties": {
                 "name": "PT. Nelta Multi Gracia",
                 "location": "Pd. Citra Eksekutif No.A.17, Penjaringan Sari, Kec. Rungkut, Surabaya, Jawa Timur 60297",
-                "stars": "4.2"
+                "image": "/assets/img/pt_maulidan.jpg",
+                "lowongan": "Junior Marketing Specialist"
             },
             "geometry": {
                 "coordinates": [112.78285214243745, -7.316376846797276],
@@ -31,8 +33,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT. RAXI INDONESIA",
-                "stars": "4.4",
-                "location": "Blok K RMI, Jl. Ngagel Jaya Sel. No.8, Baratajaya, Kec. Gubeng, Surabaya, Jawa Timur 60284"
+                "image": "/assets/img/pt_raxi.jpg",
+                "location": "Blok K RMI, Jl. Ngagel Jaya Sel. No.8, Baratajaya, Kec. Gubeng, Surabaya, Jawa Timur 60284",
+                "lowongan": "Part Time Tim Survey"
             },
             "geometry": {
                 "coordinates": [112.76001079513287, -7.293907503434679],
@@ -44,8 +47,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT VEROTEK INTI PRIMA",
-                "stars": "4.1",
-                "location": "No 17 Komplek Ruko Kenjeran Mas, Jl. Kenjeran No.475-481, Gading, Kec. Tambaksari, Surabaya, Jawa Timur 60134"
+                "image": "/assets/img/pt verotek.jpg",
+                "location": "No 17 Komplek Ruko Kenjeran Mas, Jl. Kenjeran No.475-481, Gading, Kec. Tambaksari, Surabaya, Jawa Timur 60134",
+                "lowongan": "Junior Sales"
             },
             "geometry": {
                 "coordinates": [112.78062472303856, -7.247299928524608],
@@ -57,8 +61,9 @@
             "type": "Feature",
             "properties": {
                 "name": "Mazaya coffee& roastery",
-                "stars": "4.1",
-                "location": "Jl. Gayungsari Bar. X No.32, RT.003/RW.007, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60235"
+                "image": "/assets/img/mazaya.jpg",
+                "location": "Jl. Gayungsari Bar. X No.32, RT.003/RW.007, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60235",
+                "lowongan": "Barista"
             },
             "geometry": {
                 "coordinates": [112.7176982672164,-7.336856713810088],
@@ -70,8 +75,9 @@
             "type": "Feature",
             "properties": {
                 "name": "Mason Studio",
-                "stars": "4.1",
-                "location": "SOHO Skyloft, Ciputra World, Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60224"
+                "image": "/assets/img/mason studio.png",
+                "location": "SOHO Skyloft, Ciputra World, Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60224",
+                "lowongan": "Supervisor Fashion Designer"
             },
             "geometry": {
                 "coordinates": [112.7237684095451,-7.291669225124585],
@@ -82,8 +88,9 @@
             "type": "Feature",
             "properties": {
                 "name": "TOKO SABAR",
-                "stars": "4.1",
-                "location": "RVCX+7RV, Jl. Modung - Kwanyar, Brungka, Batah Bar., Kec. Kwanyar, Kabupaten Bangkalan, Jawa Timur 69163"
+                "image": "/assets/img/toko_sabar.png",
+                "location": "RVCX+7RV, Jl. Modung - Kwanyar, Brungka, Batah Bar., Kec. Kwanyar, Kabupaten Bangkalan, Jawa Timur 69163",
+                "lowongan": "Pramuniaga"
             },
             "geometry": {
                 "coordinates": [112.89956382488585,-7.179076987766175],
@@ -94,8 +101,9 @@
             "type": "Feature",
             "properties": {
                 "name": "EAST HOPE AGRICULTURE SURABAYA",
-                "stars": "4.1",
-                "location": "Kawasan Ngoro Industri Persada Blok U-2 Lolawang Ngoro, Jarang Sari, Lolawang, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur 61385"
+                "image": "/assets/img/east hope.jpg",
+                "location": "Kawasan Ngoro Industri Persada Blok U-2 Lolawang Ngoro, Jarang Sari, Lolawang, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur 61385",
+                "lowongan": "Technical Sales, Penerjemah Bahasa Mandarin"
             },
             "geometry": {
                 "coordinates": [112.61236112488908,-7.558802758357728],
@@ -106,8 +114,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT. MITRA KARYA PRIMA Kantor Admin Paiton",
-                "stars": "4.1",
-                "location": "Area Sawah, Bhinor, Paiton, Probolinggo Regency, East Java 67291"
+                "image": "/assets/img/mitra karya.jpg",
+                "location": "Area Sawah, Bhinor, Paiton, Probolinggo Regency, East Java 67291",
+                "lowongan": "Tenaga Kerja Penyedia Jasa"
             },
             "geometry": {
                 "coordinates": [113.5740393113966,-7.711584656223105],
@@ -118,8 +127,9 @@
             "type": "Feature",
             "properties": {
                 "name": "Chi Fry Batos",
-                "stars": "4.1",
-                "location": "Jl. Diponegoro No.1, Sisir, Kec. Batu, Kota Batu, Jawa Timur 65314"
+                "image": "/assets/img/chi fry.jpg",
+                "location": "Jl. Diponegoro No.1, Sisir, Kec. Batu, Kota Batu, Jawa Timur 65314",
+                "lowongan": "JSales Makanan"
             },
             "geometry": {
                 "coordinates": [112.53449536722117,-7.878290123436322],
@@ -130,8 +140,9 @@
             "type": "Feature",
             "properties": {
                 "name": "RAIT Visual Works",
-                "stars": "4.1",
-                "location": "Jl. Kahuripan No.18, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65111"
+                "image": "/assets/img/rait visual.jpg",
+                "location": "Jl. Kahuripan No.18, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65111",
+                "lowongan": "Unity Programmer Android Game, Digital Illustrator"
             },
             "geometry": {
                 "coordinates": [112.63036318256374,-7.97618906632162],
@@ -142,8 +153,9 @@
             "type": "Feature",
             "properties": {
                 "name": "Zeus Animation",
-                "stars": "4.1",
-                "location": "Jl. Galunggung No.08, Gading Kasri, Kec. Klojen, Kota Malang, Jawa Timur 65146"
+                "image": "/assets/img/zeus.jpg",
+                "location": "Jl. Galunggung No.08, Gading Kasri, Kec. Klojen, Kota Malang, Jawa Timur 65146",
+                "lowongan": "Character Design Specialist, Social Media Management, Animator 2D"
             },
             "geometry": {
                 "coordinates": [112.61347886722203,-7.971747988294571],
@@ -154,8 +166,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT. BHAPINDO (Bhagyatra Pangan Indonesia)",
-                "stars": "4.1",
-                "location": "Jl. Satsui Tubun No.kavling 19, Gadang, Kec. Sukun, Kota Malang, Jawa Timur 65149"
+                "image": "/assets/img/bhapindo.png",
+                "location": "Jl. Satsui Tubun No.kavling 19, Gadang, Kec. Sukun, Kota Malang, Jawa Timur 65149",
+                "lowongan": "HRD, Sales Manager"
             },
             "geometry": {
                 "coordinates": [ 112.62676358256405,-8.02217466745069],
@@ -166,8 +179,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT Nobel Bangun Perkasa",
-                "stars": "4.1",
-                "location": "Jl. Kunir Rado Trade Center Selatan Asrama Haji, Ngegong, Kec. Manguharjo, Madiun kota, Jawa Timur 63125"
+                "image": "/assets/img/nobel.jpg",
+                "location": "Jl. Kunir Rado Trade Center Selatan Asrama Haji, Ngegong, Kec. Manguharjo, Madiun kota, Jawa Timur 63125",
+                "lowongan": "Sales Counter, Driver, Kepala Cabang "
             },
             "geometry": {
                 "coordinates": [111.51301075372498,-7.609263511370087],
@@ -178,8 +192,9 @@
             "type": "Feature",
             "properties": {
                 "name": "APOTEK PRAPATAN",
-                "stars": "4.1",
-                "location": "Jl. Irian, Jajar, Kanigoro, Kec. Kanigoro, Kabupaten Blitar, Jawa Timur 66171"
+                "image": "/assets/img/apotek.jpg",
+                "location": "Jl. Irian, Jajar, Kanigoro, Kec. Kanigoro, Kabupaten Blitar, Jawa Timur 66171",
+                "lowongan": "Apoteker, HR Manager, Customer Service, Staff Pelayanan Apotek "
             },
             "geometry": {
                 "coordinates": [112.22029839605882,-8.13047089795088],
@@ -190,8 +205,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT. Eagle Sporting Goods",
-                "stars": "4.1",
-                "location": "CV8G+X39, Morobau, Kerep Kidul, Kec. Bagor, Kabupaten Nganjuk, Jawa Timur 64461"
+                "image": "/assets/img/Eagle_sporting.jpg",
+                "location": "CV8G+X39, Morobau, Kerep Kidul, Kec. Bagor, Kabupaten Nganjuk, Jawa Timur 64461",
+                "lowongan": "Mechanical Engineering, Receptionist, Design Graphic"
             },
             "geometry": {
                 "coordinates": [111.87519995896488,-7.582375772534252],
@@ -202,8 +218,9 @@
             "type": "Feature",
             "properties": {
                 "name": "Lintas Express Nusantara",
-                "stars": "4.1",
-                "location": "HMGQ+P55, RT.01/RW.07, Area Sawah/Kebun, Pojok, Sidoharjo, Kota Pacitan, Jawa Timur"
+                "image": "/assets/img/lintas express.jpg",
+                "location": "HMGQ+P55, RT.01/RW.07, Area Sawah/Kebun, Pojok, Sidoharjo, Kota Pacitan, Jawa Timur",
+                "lowongan": "Helper Gudang, Staff Gudang, Driver, Staff Marketing"
             },
             "geometry": {
                 "coordinates": [112.68793302303999,-7.423014475267672],
@@ -214,8 +231,9 @@
             "type": "Feature",
             "properties": {
                 "name": "PT. Timur Megah Steel",
-                "stars": "4.1",
-                "location": "Jl. Raya Tenaru No.18, Dusun Cangkir, Cangkir, Kec. Driyorejo, Kabupaten Gresik, Jawa Timur 61177"
+                "image": "/assets/img/timur_megah_steel.jpg",
+                "location": "Jl. Raya Tenaru No.18, Dusun Cangkir, Cangkir, Kec. Driyorejo, Kabupaten Gresik, Jawa Timur 61177",
+                "lowongan": "Supervisor Maintenance, PPIC, Supervisor Produksi, Management Trainee"
             },
             "geometry": {
                 "coordinates": [112.62743345372277,-7.3638273664028056],
@@ -226,8 +244,9 @@
             "type": "Feature",
             "properties": {
                 "name": "CV. Tata Mitra Sentosa",
-                "stars": "4.1",
-                "location": "Jl. Raya Titan Asri No.2, Pandanwangi, Kec. Blimbing, Kota Malang, Jawa Timur 65126"
+                "image": "/assets/img/tata_mitra_Sentosa.jpg",
+                "location": "Jl. Raya Titan Asri No.2, Pandanwangi, Kec. Blimbing, Kota Malang, Jawa Timur 65126",
+                "lowongan": "Staff administrasi, Marketing Eksekutif"
             },
             "geometry": {
                 "coordinates": [112.65559226722183,-7.958136756348139],
