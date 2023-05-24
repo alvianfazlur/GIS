@@ -36,8 +36,12 @@
       object-fit: cover;
       height: 100%;
     }
+
+    th {
+      background-color: #f2f2f2;
+    }
 		.leaflet-container {
-			height: 400px;
+			height: 600px;
 			width: 600px;
 			max-width: 100%;
 			max-height: 100%;
@@ -53,6 +57,7 @@
       display: inline-block;
       margin-right: 5px;
     }
+
 	</style>
 
         <!-- Vendor CSS -->
@@ -117,10 +122,10 @@
 
 <script>
 	
-    const map = L.map('map').setView([-7.6440623,112.7734131], 8);
+    const map = L.map('map').setView([-7.6440623,112.7734131], 8.5);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 18,
+		maxZoom: 20,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
@@ -202,32 +207,32 @@ $.getJSON('assets/geojson/dataloker.geojson', function (data) {
         }).addTo(map);
     });
 </script>
-
-<div id="carouselExampleControls" class="carousel slide w-20 mx-auto" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/assets/img/laravel.png" class="d-block w-100" alt="..." >
+<div class="d-flex">
+  <div id="carouselExampleControls" class="carousel slide w-20 mx-auto" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/img/laravel.png" class="d-block w-100" alt="..." >
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/leaflet.svg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/geojson.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/mysql.png" class="d-block w-100" alt="...">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="/assets/img/leaflet.svg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/geojson.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/mysql.png" class="d-block w-100" alt="...">
-    </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
   </div>
- <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </button>
 </div>
-
 <script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
