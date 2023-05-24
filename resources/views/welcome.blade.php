@@ -11,12 +11,31 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/landingpage/css/animate.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/all.min.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/icofont.min.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/odometer.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/lightcase.css" />
+    <link rel="stylesheet" href="assets/landingpage/css/style.css" />
 
 	<style>
 		html, body {
 			height: 100%;
-			margin: 50px;
+      margin-top: 20px;
+      margin-left: 10px;
 		}
+    #imageSlider {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .carousel-inner img {
+      object-fit: cover;
+      height: 100%;
+    }
 		.leaflet-container {
 			height: 400px;
 			width: 600px;
@@ -86,8 +105,8 @@
       </div>
       <!-- header-main -->
 
-      <div class="main main-app p-3 p-lg-4">
-        <div id="map" style="width: 75%; height: 400px;"></div>
+      <div class="main main-app p-2 p-lg-2">
+        <div id="map" style="width: 100%;"></div>
         <div id="legend" class="leaflet-control"></div>
       </div>
 <script src="https://cdn.jsdelivr.net/leaflet/1.3.1/leaflet.js"></script>
@@ -184,6 +203,30 @@ $.getJSON('assets/geojson/dataloker.geojson', function (data) {
     });
 </script>
 
+<div id="carouselExampleControls" class="carousel slide w-20 mx-auto" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/img/laravel.png" class="d-block w-100" alt="..." >
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/leaflet.svg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/geojson.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/img/mysql.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+ <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
 
 <script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -195,11 +238,102 @@ $.getJSON('assets/geojson/dataloker.geojson', function (data) {
 <script src="../lib/chart.js/chart.min.js"></script>
 <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
 <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="/assets/js/script.js"></script>
 <script src="/assets/js/db.data.js"></script>
 <script src="/assets/js/db.sales.js"></script>
 
+<footer class="footer footer--four">
+  <div class="footer__top padding-tb bg-home6">
+      <div class="container">
+          <div class="row g-4 justify-content-center">
+              <div class="col-lg-3 col-sm-6 col-12">
+                  <div class="footer__about">
+                      <div class="footer__title wow fadeInUp" data-wow-delay=".5s">
+                          <h5>IdleTracker</h5>
+                      </div>
+                      <div class="footer__body wow fadeInUp" data-wow-delay=".5s">
+                          <p>Website ini didedikasikan untuk menyajikan informasi tentang data pengangguran di
+                              Jawa Timur secara visual.</p>
+                          <ul>
+                              <li>
+                                  <div class="icon"><i class="icofont-phone"></i></div>
+                                  <div class="text">+62-813-5703-0197</div>
+                              </li>
+                              <li>
+                                  <div class="icon"><i class="icofont-envelope"></i></div>
+                                  <div class="text">kulitjeruk720@gmail.com</div>
+                              </li>
+                              <li>
+                                  <div class="icon"><i class="icofont-google-map"></i></div>
+                                  <div class="text">PENS, Surabaya</div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="footer__timetable">
+                      <div class="footer__title wow fadeInUp" data-wow-delay=".5s">
+                          <h5>Working Days</h5>
+                      </div>
+                      <div class="footer__body wow fadeInUp" data-wow-delay=".5s">
+                          <ul>
+                              <li>
+                                  <div class="left">Monday</div>
+                                  <div class="right">08AM - 5PM</div>
+                              </li>
+                              <li>
+                                  <div class="left">Tuesday</div>
+                                  <div class="right">08AM - 5PM</div>
+                              </li>
+                              <li>
+                                  <div class="left">Wednesday</div>
+                                  <div class="right">08AM - 5PM</div>
+                              </li>
+                              <li>
+                                  <div class="left">Thursday</div>
+                                  <div class="right">08AM - 5PM</div>
+                              </li>
+                              <li>
+                                  <div class="left">Friday</div>
+                                  <div class="right">08AM - 11AM</div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 col-12">
+                  <div class="footer__link">
+                      <div class="footer__body wow fadeInUp" data-wow-delay=".5s">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="footer__bottom wow fadeInUp" data-wow-delay=".5s">
+      <div class="container">
+          <p>&copy; 2023 <a href="index.html">IdleTracker</a> all Right Reserved by <a href="#"
+                  target="_blank">Webgis09</a></p>
+      </div>
+  </div>
+</footer>
 
+
+            <script src="assets/landingpage/js/jquery.js"></script>
+            <script src="assets/landingpage/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/landingpage/js/waypoints.min.js"></script>
+            <script src="assets/landingpage/js/swiper.min.js"></script>
+            <script src="assets/landingpage/js/jquery.counterup.min.js"></script>
+            <script src="assets/landingpage/js/circularProgressBar.min.js"></script>
+            <script src="assets/landingpage/js/wow.min.js"></script>
+            <script src="assets/landingpage/js/isotope.pkgd.min.js"></script>
+            <script src="assets/landingpage/js/viewport.jquery.js"></script>
+            <script src="assets/landingpage/js/odometer.min.js"></script>
+            <script src="assets/landingpage/js/lightcase.js"></script>
+            <script src="assets/landingpage/js/functions.js"></script>
 </body>
 
