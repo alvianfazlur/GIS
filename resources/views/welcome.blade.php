@@ -4,9 +4,9 @@
 	<base target="_top">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Pengangguransky</title>
-	
+
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
@@ -39,10 +39,10 @@
         <!-- Vendor CSS -->
         <link rel="stylesheet" href="/lib/remixicon/fonts/remixicon.css" />
         <link rel="stylesheet" href="/lib/jqvmap/jqvmap.min.css" />
-    
+
         <!-- Template CSS -->
         <link rel="stylesheet" href="/assets/css/style.min.css" />
-	
+
 </head>
 <body>
 
@@ -59,7 +59,7 @@
                 <a href="/lp" class="nav-link"><i class="ri-map-pin-line"></i> <span>Map</span></a>
               </li>
               <li class="nav-item">
-                <a href="../dashboard/events.html" class="nav-link"><i class="ri-database-line"></i> <span>Database</span></a>
+                <a href="/data" class="nav-link"><i class="ri-database-line"></i> <span>Database</span></a>
               </li>
               <li class="nav-item">
                 <a href="../dashboard/sales.html" class="nav-link"><i class="ri-contacts-line"></i> <span>Contact Us</span></a>
@@ -72,16 +72,16 @@
         <!-- sidebar-footer -->
       </div>
       <!-- sidebar -->
-  
+
       <div class="header-main px-3 px-lg-4">
         <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
-  
+
         <div class="form-search me-auto">
           <input type="text" class="form-control" placeholder="Search" />
           <i class="ri-search-line"></i>
         </div>
         <!-- form-search -->
-  
+
 
       </div>
       <!-- header-main -->
@@ -97,7 +97,7 @@
 <script src="/dataloker.js"></script>
 
 <script>
-	
+
     const map = L.map('map').setView([-7.6440623,112.7734131], 8);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -202,4 +202,3 @@ $.getJSON('assets/geojson/dataloker.geojson', function (data) {
 
 
 </body>
-
