@@ -217,8 +217,7 @@
                                             </div>
                                             <div class="text">
                                                 <h5>Heat Map</h5>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                                                    veritatis sed pariatur vitae?.</p>
+                                                <p> Fitur yang memungkinkan para pengguna untuk melihat lokasi secara visual pada peta</p>
                                             </div>
                                         </div>
                                     </div>
@@ -232,8 +231,8 @@
                                             </div>
                                             <div class="text">
                                                 <h5>Map Marker</h5>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                                                    veritatis sed pariatur vitae?.</p>
+                                                <p>Fitur yang memungkinkan para pengguna untuk melihat informasi detail mengenai
+                                                    lowongan kerja yang sedang terbuka.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -247,8 +246,7 @@
                                             </div>
                                             <div class="text">
                                                 <h5>Realtime Data</h5>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                                                    veritatis sed pariatur vitae?.</p>
+                                                <p>fitur yang memungkinkan pengguna untuk melihat pembaruan data secara berkala</p>
                                             </div>
                                         </div>
                                     </div>
