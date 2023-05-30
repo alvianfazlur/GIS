@@ -252,6 +252,240 @@
                 "coordinates": [112.65559226722183,-7.958136756348139],
                 "type": "Point"
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lippo Plaza",
+                "image": "/assets/img/lippo.jpg",
+                "location": "Jl. Gajah Mada No.106, Kb. Kidul, Jember Kidul, Kec. Kaliwates, Kabupaten Jember, Jawa Timur 68131",
+                "lowongan": "Sales Toko, Karyawan Tea Break"
+            },
+            "geometry": {
+                "coordinates": [113.6877787,-8.1738394],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Radio Bintang Tenggara",
+                "image": "/assets/img/radio bwi.jpg",
+                "location": "Jl. Raya No. 88, Jajag, Wringin Agung, Gambiran, Wringin Agung Gambiran, Sumberrejo, Wringin Agung, Kec. Gambiran, Kabupaten Banyuwangi, Jawa Timur 68486",
+                "lowongan": "Announcer (Penyiar)"
+            },
+            "geometry": {
+                "coordinates": [114.1734711836579,-8.429396822368545],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT. INTIDI BETON JATIM",
+                "image": "/assets/img/intidi.jpg",
+                "location": "Dusun Adi Sono, Lebaksono, Pungging, Mojokerto Regency, East Java 61384",
+                "lowongan": "Helper Produksi, Mekanik, QC Engineer, Welder"
+            },
+            "geometry": {
+                "coordinates": [112.56964429605331,-7.529567629682891],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT. TANAHMAS KENCANA ABADI",
+                "image": "/assets/img/tanahmas.jpg",
+                "location": "Jl. Raya Babat- Sukorame Jombang KM 11, Kedungrejo, Kalen, Kec. Kedungpring, Kabupaten Lamongan, Jawa Timur 62272",
+                "lowongan": "Quality Control"
+            },
+            "geometry": {
+                "coordinates": [112.17254062303817,-7.199197784734379],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT Dewata Kencana Distribusi",
+                "image": "/assets/img/dewata.jpg",
+                "location": "Jl. Gatot Subroto No.191, Krajan, Dawuhan Lor, Kec. Sukodono, Kabupaten Lumajang, Jawa Timur 67352",
+                "lowongan": "Sales Taking Order"
+            },
+            "geometry": {
+                "coordinates": [113.2213181248941,-8.104074536383315],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT Poci Kreasi Mandiri",
+                "image": "/assets/img/poci.jpg",
+                "location": "PXWCH+CXQ, Tapan, Kec. Kedungwaru, Kabupaten Tulungagung, Jawa Timur 66229",
+                "lowongan": "Crew Outlet"
+            },
+            "geometry": {
+                "coordinates": [111.92994450955176,-8.028754236902705],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT. BFI FINANCE CABANG TULUNGAGUNG",
+                "image": "/assets/img/bfi.jpg",
+                "location": "Jl. W.R. Supratman No.104, Kenayan, Kec. Tulungagung, Kabupaten Tulungagung, Jawa Timur 66212",
+                "lowongan": "Marketing Agency"
+            },
+            "geometry": {
+                "coordinates": [111.90002481851265,-8.059819891346077],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT Telkom Indonesia ",
+                "image": "/assets/img/telkom.jpg",
+                "location": "Jl. Jaksa Agung Suprapto No.3, Cabean Kidul, Ketanggi, Kec. Ngawi, Kabupaten Ngawi, Jawa Timur 63211",
+                "lowongan": "Staff Telkom"
+            },
+            "geometry": {
+                "coordinates": [111.44725925400401,-7.402121786334984],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PT Santosa Utama Lestari",
+                "image": "/assets/img/santosa.jpg",
+                "location": "JCC2+54G, Watugudel, Pitu, Kec. Pitu, Kabupaten Ngawi, Jawa Timur 63252",
+                "lowongan": "Admin Marketing"
+            },
+            "geometry": {
+                "coordinates": [111.40112811066946,-7.380520933991503],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rapi Elektronik Magetan",
+                "image": "/assets/img/rapi.jpg",
+                "location": "Jl. Yos Sudarso No.53, Sukowinangun, Kec. Magetan, Kabupaten Magetan, Jawa Timur 63311",
+                "lowongan": "Kepala Gudang"
+            },
+            "geometry": {
+                "coordinates": [111.32921469605446,-7.650442392338174],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Islamic International School PSM (IIS PSM)",
+                "image": "/assets/img/boarding_school.jpg",
+                "location": "Jl. Monginsidi No.52, Candi Lor, Candirejo, Kec. Magetan, Kabupaten Magetan, Jawa Timur 63319",
+                "lowongan": "Musrif/Musrifah Boarding"
+            },
+            "geometry": {
+                "coordinates": [111.31505911664009,-7.655141574480086],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gubuk Seblak",
+                "image": "/assets/img/gublak.jpg",
+                "location": "Jl. HOS Cokroaminoto No.26, Lingkungan Delama, Pajagalan, Kec. Kota Sumenep, Kabupaten Sumenep, Jawa Timur 69416",
+                "lowongan": "Pramuniaga"
+            },
+            "geometry": {
+                "coordinates": [113.86595638950176,-7.007230528192042],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Anita Family Bakery Sumenep",
+                "image": "/assets/img/bakery.jpg",
+                "location": "Jl. Jendral Sudirman, Pujangga, Pajagalan, Kec. Kota Sumenep, Kabupaten Sumenep, Jawa Timur 69416",
+                "lowongan": "Admin Produksi, Baker, Decor Tart"
+            },
+            "geometry": {
+                "coordinates": [113.86202599522373,-7.006442759644074],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CV Surya Agung Motor ",
+                "image": "/assets/img/surya.jpg",
+                "location": "Jl. Trunojoyo No.17, Pejagan, Kec. Bangkalan, Kabupaten Bangkalan, Jawa Timur 69112",
+                "lowongan": "Marketing, Mekanik "
+            },
+            "geometry": {
+                "coordinates": [112.753089437649,-7.026068920707091],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Raghel Ponsel",
+                "image": "/assets/img/raghel.jpg",
+                "location": "Jl. Ki Lemah Duwur No.4a, Lebak, Pejagan, Kec. Bangkalan, Kabupaten Bangkalan, Jawa Timur 69112",
+                "lowongan": "SPG, Admin Toko"
+            },
+            "geometry": {
+                "coordinates": [112.75061979717422,-7.023633768137896],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Percetakan Gapura Jaya",
+                "image": "/assets/img/gapura.jpg",
+                "location": "Jl. Pramuka No.25E, RT.4/RW.3, Ronowijayan, Kertosari, Kec. Babadan, Kabupaten Ponorogo, Jawa Timur 63491",
+                "lowongan": "Graphic Design"
+            },
+            "geometry": {
+                "coordinates": [111.48097780696885,-7.863108549134185],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Akazaki Japan Center",
+                "image": "/assets/img/akazaki.jpg",
+                "location": "Jl. Niken Gandini, Plampitan, Setono, Kec. Jenangan, Kabupaten Ponorogo, Jawa Timur 63453",
+                "lowongan": "Pengajar Bahasa Jepang"
+            },
+            "geometry": {
+                "coordinates": [111.50079553761273,-7.851891846005451],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Klinik Utama Faiza",
+                "image": "/assets/img/klinik.jpg",
+                "location": "Jl. Bonorogo No.161, Serkeser, Buddagan, Kec. Pademawu, Kabupaten Pamekasan, Jawa Timur 69323",
+                "lowongan": "Security, Cleaning Service, Sopir, Tenaga IT"
+            },
+            "geometry": {
+                "coordinates": [113.49876885299489,-7.158333624297757],
+                "type": "Point"
+            }
         }
     ]
 }
