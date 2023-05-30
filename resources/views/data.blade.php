@@ -140,7 +140,7 @@
     });
 </script>
 
-        <h2>Tabel data persentase pengangguran di Jawa Timur</h2>
+        <h2><br><br>Data persentase pengangguran di Jawa Timur</h2>
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
